@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --hover-color: rgb(153, 0, 255);
+  --border-color: rgba(149, 149, 149, 0.574);
+  --switch-br-url: url(assets/BG/moon.star.svg);
+  --surfece-color: rgba(179, 179, 179, 0.026);
+  --stroke-color: rgba(202, 201, 201, 0.5);
+  --border-stroke-color: rgb(198, 198, 198);
+}
+
+
+body {
+  background: url(assest/img/bg.jpg) no-repeat top center/cover;
+  transition: all 1s;
+} 
+
+body * {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 1s;
+  
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 20px;
+  transition: all 1s;
+
+}
+
+/* profile*/
+
+#profile {
+  text-align: center;
+  padding: 7px;
+}
+
+#profile img {
+  width: 114px;
+}
+
+#profile p {
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+/* final */
+
+
+/* Lista de Links */
+ul {
+  list-style: none;
+  text-decoration: none;
+
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding: 24px 0;
+
+}
+
+ul li a { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 14px 21px;
+
+  background: var(--surfece-color);
+
+   border-radius: 10px;
+   border: 0.1px solid rgba(77, 77, 77, 0.5);
+
+   font-weight: 500;
+
+   backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(5px);
+
+   transition: background  0.5s;
+   transition: all 1s;
+
+}
+
+ul li a:hover {
+    background: var(--hover-color);
+    border: 1.5px var(--hover-color) ;
+    backdrop-filter: blur(80px);
+
+}
+
+/* final */
+
+/* Social-links */
+#social-links {
+    display: flex;
+    justify-content: center;
+    
+    padding: 24px 0;
+    
+    font-size: 24px;
+    transition: all 1s;
+  
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    padding: 10px;
+
+    transition: background 0.4s;
+    border-radius:100% ;
+    
+}
+
+#social-links a:hover {
+    background:var(--hover-color);
+    
+}
+
+/* Final */
+
+/* Footer */
+
+footer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 1s;
+    
+}
+
+.text p {
+  text-align: center;
+  align-items: center;
+
+
+}
+
+
+ footer p span {
+    font-weight: 500;
+    color: rgb(195, 0, 255);
+
+ }
+
+/* Final */
+
+@keyframes vai {
+  from {
+    left:0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes volta {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
+  }
+}
